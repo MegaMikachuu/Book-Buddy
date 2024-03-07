@@ -5,7 +5,7 @@ export default function Home(){
 return(
     <div>
     <Nav/>
-    <h1> </h1>
+    <h1> Book Buddy</h1>
 
     </div>)
 }

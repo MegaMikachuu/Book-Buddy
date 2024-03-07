@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
-import BubbaShrimp from './pages/BubbaShrimp'
+import BubbaShrimp from './pages/BookList'
 import BookSearch from './pages/BookSearch'
+import BookSearchAll from './pages/BookSearchAll'
 import Form from  './pages/Form'
+//import {Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -26,25 +28,26 @@ function App() {
     console.error(event)
   }
 }
-  useEffect(() => {getBook("Hunger Games")}, []);
+  useEffect(() => {getBook("")}, []);
 
 
   return (
+
   <div className='App'>
     <Home />
-    
-      <h1>Welcome to The Book Buddy App</h1>
-  
+
   <Form BookSearch = {getBook}/>
+  <div className='Card'>
   <BookSearch book={book} />
-  
+  </div>
   
   </div>
   )
      // <Home/>
      // <BubbaShrimp/>
       //<BookSearch/>
-    
+      //<BookSearch book={book} />
+
 
 }
 
