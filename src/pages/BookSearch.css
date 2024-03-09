@@ -1,0 +1,20 @@
+.Book-Border{
+    border: 1px solid #000;
+}
+.BookTitle, .AuthorName{
+    font-weight: bold;
+}
+
+img{
+    background-color: black;
+    border: 5px solid black;
+}
+
+.FavBar{
+border: 5px dotted beige
+}
+.FavBar  button {
+    background-color: black;
+    color: white;
+    margin: auto;
+}
